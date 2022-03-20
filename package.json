@@ -1,0 +1,27 @@
+{
+  "name": "ethereumOracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "truffle": "^5.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mudrzr/ethereumOracle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mudrzr/ethereumOracle/issues"
+  },
+  "homepage": "https://github.com/mudrzr/ethereumOracle#readme"
+}
