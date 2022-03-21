@@ -7,6 +7,6 @@ module.exports = async function(deployer, _network, accounts) {
 
   await deployer.deploy(Oracle, admin);
   const oracle = await Oracle.deployed();
-  await oracle.updateReporter(reporter, true);
+  await oracle.updateReporter(reporter, true, {from: admin});
   deployer.deploy(Consumer, oracle.address);
 };
