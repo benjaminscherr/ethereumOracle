@@ -13,10 +13,11 @@ contract Consumer {
 
     //Function that requires Oracle
 
-    function priceReturn() external {
+    function priceReturn() external view {
         bytes32 index = keccak256(abi.encodePacked('BTC/USD'));
         (bool result, uint timestamp, uint data) = oracle.getData(index);
         require(result == true, "No result found for specified key");
+        require(timestamp >= block.timestamp - 3, "Data is no longer current");
     }
    
 }

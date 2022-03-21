@@ -7,9 +7,9 @@
     "test": "test"
   },
   "dependencies": {
+    "coingecko-api": "^1.0.10",
     "truffle": "^5.1.5"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "mocha"
   },
